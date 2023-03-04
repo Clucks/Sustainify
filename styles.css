@@ -147,8 +147,6 @@
   color: white; 
 }
 
-
-
 #aboutus{
   font-size:60px;
   max-width: 2vh;
@@ -179,7 +177,9 @@
   padding:40px;
   margin:15vh 30vh 5vh 30vh;
   border-radius: 20px;
-  
+  text-align: center;
+  font-size: 40px;
+  color: white;
 }
 
 .direction{
@@ -187,6 +187,9 @@
   padding:40px;
   margin:5vh 30vh 20vh 30vh;
   border-radius: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
 }
 
 .third{

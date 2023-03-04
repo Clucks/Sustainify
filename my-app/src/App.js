@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 class User {
   constructor(name, score) {
@@ -37,7 +36,9 @@ export default function Leaderboard() {
   function renderUsers() {
     return usrs.map((user, index) => (
       <div>
-        <p>{index + 1 + ")              " + user.name + "                  " + user.score}</p>
+        <p>
+          {index + 1 + ")              " + user.name + "                  " + user.score}
+        </p>
       </div>
     ));
   }
