@@ -93,6 +93,9 @@
   border-style: solid;
   border-color: #0B8C2F;
 
+  border: 1.5px solid grey;
+  color: white;
+  
 }
 
 .progressbar {
@@ -105,7 +108,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+
 }
+
 
 .about-us {
   display:flex;
@@ -114,12 +119,33 @@
   justify-content: space-evenly;
 }
 
-.right-about{
-  background-color:#559D77;
-  min-width:20vh;
-  min-height: 20vh;
+.right-about {
+  background-color: #559D77;
+  width: 50vh;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left:40vh;
+}
+
+.right-about img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
 }
 
 #aboutus{
   font-size:60px;
+  max-width: 2vh;
+}
+
+.left-about{
+  margin-left: 25vh;
+  min-width: 40vh;
+}
+
+.howto{
+  margin-top:50vh;
 }
