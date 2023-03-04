@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+.header {
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+
+    
+    min-height: 80vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex:auto;
+    background-color: #f8f8f8;
+}
+  
+
+.header img {
+    max-width: 200px;
+}
+
+.header-list {
+    margin-right: 20vh;
+
+    display: flex;
+    list-style: none; /* removes default list styling */
+    padding: 0; /* remove any default padding */
+    background-color:white;
+}
+  
+.header-list li {
+    padding:15px; /* add some spacing between the list items */
+    margin-right: 20px;
+
+}
+
+.header-top {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-width:70%;
+}
+
+.header-top img {
+  height: 200px;
+}
+
+.header-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-bottom{
+  margin-top: 10vh;
+  margin-right:49%;
+}
+
+.sustainify-title {
+  font-size: 80px;
+
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.sustainify-subtitle {
+  font-size: 20px;
+  color:white;
+  
+}
+
+
+.progressbar-container {
+  width:  80vh;
+  height: 40px;
+  background-color: #dcdcdc;
+
+  margin-top: 20vh;
+  margin-right:60vh;
+
+  border-radius: 20px;
+
+}
+
+.progressbar {
+  display:flex;
+  width: 50%;
+  height: 100%;
+  background-color: green;
+
+  color:white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+}
+
