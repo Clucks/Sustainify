@@ -27,21 +27,39 @@
 }
 
 .header-list {
-    margin-right: 20vh;
-
-    display: flex;
-    list-style: none; /* removes default list styling */
-    padding: 0; /* remove any default padding */
-    background-color:white;
-    font-size:20px;
-    
-    border-radius: 10px;
+  margin-right: 20vh;
+  display: flex;
+  list-style: none; /* removes default list styling */
+  padding: 0; /* remove any default padding */
+  background-color:white;
+  font-size:20px;
+  list-style: none; /* removes default list styling */
+  padding: 0; /* remove any default padding */
+  border-radius: 10px;
 }
 
 .header-list li {
-    padding:15px; /* add some spacing between the list items */
-    margin-right: 20px;
+  padding:15px; /* add some spacing between the list items */
+  margin-right: 20px;
+  list-style: none; /* removes default list styling */
 
+}
+
+
+/* add hover effect to the list item */
+.header-list li:hover {
+  background-color: #0B8C2F;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-list li a {
+  color: gray;
+}
+
+.header-list li a:hover {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
 }
 
 .header-top {
@@ -140,11 +158,19 @@
 }
 
 .button {
-  background-color: green;
+  background-color: white;
   margin-top: 10px; 
   border-radius: 5px; 
   padding: 10px 20px; 
-  color: white; 
+  color: black; 
+  border: 2px solid #000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0B8C2F;
+  color: #fff;
+  border: 2px solid #000;
 }
 
 #aboutus{
@@ -175,7 +201,7 @@
 .howto{
   background-color:#559D77;
   padding:40px;
-  margin:15vh 30vh 5vh 30vh;
+  margin:15vh 45vh 5vh 45vh;
   border-radius: 20px;
   text-align: center;
   font-size: 40px;
@@ -185,7 +211,7 @@
 .direction{
   background-color:#559D77;
   padding:40px;
-  margin:5vh 30vh 20vh 30vh;
+  margin:5vh 45vh 20vh 45vh;
   border-radius: 20px;
   text-align: center;
   font-size: 40px;

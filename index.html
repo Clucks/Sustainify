@@ -12,10 +12,10 @@
         <div class="header-top">
           <img src="/images/LOGO.png">
           <ul class="header-list">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Sponsors</li>
-            <li>Contact Us</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#before-about" onclick="scrollToAbout()">About Us</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
         <div class="header-bottom">
@@ -28,15 +28,17 @@
         </div>
         
     </div>
-    <div class = "about-us">
-        <div class = left-about>
-            <img src = "/images/tree.png">
-        </div>
-        <div class = right-about>
-            <div id = "aboutus">About Us</div>
-            
-            <div id = "description">Sustainify works towards helping encourage our participants to perform the daily tasks that'll help reduce planetary infliction. With the implementation of the leaderboard, an incentive of winning and trying to get higher scores will motivate participants to continue to perform healthy earth habits to make keep and maintain the beautiful planet that we call home.</div>
-            <button class = "button"> Learn More </button>
+    <div id = "before-about"></div>
+    <div id = "about">
+        <div class = "about-us">
+            <div class = left-about>
+                <img src = "/images/tree.png">
+            </div>
+            <div class = right-about>
+                <div id = "aboutus">About Us</div>
+                <div id = "description">Sustainify works towards helping encourage our participants to perform the daily tasks that'll help reduce planetary infliction. With the implementation of the leaderboard, an incentive of winning and trying to get higher scores will motivate participants to continue to perform healthy earth habits to make keep and maintain the beautiful planet that we call home.</div>
+                <button class = "button"> Learn More </button>
+            </div>
         </div>
     </div>
     <div class = "third">
@@ -44,16 +46,24 @@
             How to play:
         </div>
         <div class = "direction">
-            You have 24 hours to perform the 3 daily task in an attempt to help better our planet! Maintain a streak to gain extra points!
+            You have 24 hours to perform the 3 daily tasks in an attempt to help better our planet! Maintain a streak to gain extra points!
         </div>
     </div>
     <div class = "container">
-        <ul>
-            
-        </ul>
+        <div>
+            insert challenges here
+        </div>
+        <div id = "generator">
+            <img src = "/images/cartooncharacterwave.png">
+        </div>
     </div>
     <div id = "root">Leaderboard</div>
-    <script src = "/script.js"></script>
+    <script src = "script.js">
+        function scrollToAbout() {
+        var element = document.getElementById("about");
+        element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        }
+    </script>
 
 </body>
 </html>

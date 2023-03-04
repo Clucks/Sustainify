@@ -53,7 +53,7 @@ function Leaderboard() {
   const leaderboardDiv = document.createElement('div');
   leaderboardDiv.innerHTML = `
     <h1 class="title"> Leaderboard </h1>
-    <h2 class="subheader"> Username Score</h2>
+    <h3 class="subheader"> Username Score</h3>
     <h3>${renderUsers()}</h3>
   `;
 
@@ -95,7 +95,7 @@ function getDate(timer) {
   }
 }
 
-const time = 15;
+const time = 86400;
 let myInt = 0;
 let chals = challenges;
 
@@ -174,8 +174,22 @@ function renderChals() {
 }
 
 document.querySelector(".title").innerHTML = "Challenges";
+
+function renderLeaderboard() {
+  return leaderboard.map((player, index) =>
+    "<div>" +
+    "<p>" +
+    (index + 1) + ". " +
+    player.name + ", " + player.score +
+    "</p>" +
+    "</div>"
+  );
+}
 document.querySelector(".timer").innerHTML = "Time left: " + getDate(time);
-document.querySelector(".list").innerHTML = renderChals().join("");
+
+const listElement = document.createElement("h3"); // Get the list element
+listElement.innerHTML = renderChals();
+document.body.appendChild(listElement);
 
 useEffect(() => {
   if (myInt === 0 && time > 0) {
@@ -184,3 +198,7 @@ useEffect(() => {
   return () => clearInterval(myInt);
 }, [myInt, time]);
     
+function scrollToAbout() {
+  const aboutSection = document.getElementById("about"); // get the element with the "about" id
+  aboutSection.scrollIntoView({behavior: "smooth"}); // scroll smoothly to the element
+}

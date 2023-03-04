@@ -38,7 +38,12 @@ export default function Leaderboard() {
     return usrs.map((user, index) => (
       <div>
         <p>
-          {(index + 1) + ") " + user.name + " " + user.score}
+          {index +
+            1 +
+            ")              " +
+            user.name +
+            "                  " +
+            user.score}
         </p>
       </div>
     ));
