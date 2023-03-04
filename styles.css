@@ -31,8 +31,13 @@
     list-style: none; /* removes default list styling */
     padding: 0; /* remove any default padding */
     background-color:white;
+    font-size:20px;
 }
   
+#special{
+  background-color: #0B8C2F;
+}
+
 .header-list li {
     padding:15px; /* add some spacing between the list items */
     margin-right: 20px;
@@ -80,14 +85,16 @@
 
 
 .progressbar-container {
-  width:  80vh;
+  width:  65%;
   height: 40px;
-  background-color: #dcdcdc;
+  background-color: white;
 
   margin-top: 20vh;
-  margin-right:60vh;
+  margin-right:12vh;
 
   border-radius: 20px;
+  border-style: solid;
+  border-color: #0B8C2F;
 
 }
 
@@ -101,6 +108,17 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-
 }
 
+.about-us {
+  display:flex;
+  margin-top: 20vh;
+  min-width: 40vh;
+  justify-content: space-between;
+}
+
+.right-about{
+  background-color:#559D77;
+  min-width:20vh;
+  min-height: 20vh;
+}
