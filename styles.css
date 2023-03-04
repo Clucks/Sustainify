@@ -124,32 +124,73 @@
 
 .right-about {
 
-  width: 50vh;
+  display:flex;
+  flex-direction: column ;
+  min-width: 50%;
   height: 25vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   margin-left:20vh;
 }
 
-.right-about img {
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: contain;
+#description{ 
+  min-width: 20vh;
 }
+
+.button {
+  background-color: green;
+  margin-top: 10px; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  color: white; 
+}
+
+
 
 #aboutus{
   font-size:60px;
   max-width: 2vh;
+  display: inline-block;
+  white-space: nowrap;
+  
 }
 
-.left-about{
-  margin-left: 50%;
-  min-width: 40vh;
+.left-about {
+  width: 50vh;
+  height: 30vh;
   background-color: #559D77;
+  background-size: fill;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 60%;
+}
+
+.left-about img {
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .howto{
-  margin-top:50vh;
+  background-color:#559D77;
+  padding:40px;
+  margin:15vh 30vh 5vh 30vh;
+  border-radius: 20px;
+  
+}
+
+.direction{
+  background-color:#559D77;
+  padding:40px;
+  margin:5vh 30vh 20vh 30vh;
+  border-radius: 20px;
+}
+
+.third{
+  margin-top:15vh;
+  padding:5px;
+  background-color: #E6E6E6;
 }
