@@ -93,7 +93,7 @@
   border-style: solid;
   border-color: #0B8C2F;
 
-  border: 1.5px solid grey;
+  border: 2px solid grey;
   color: white;
   
 }
@@ -107,7 +107,7 @@
   color:white;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 15px;
 
 }
 
